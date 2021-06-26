@@ -27,6 +27,7 @@
                     <th>Age</th>
                     <th>Email</th>
                     <th>Update</th>
+                    <th>AddRecord</th>
                 </tr>
             </thead>
             <tbody>
@@ -46,6 +47,7 @@
                 ?>
                <td><button style='width:70px;'><a href='edit.php?id=<?php echo "$row[id]"?> '>Edit</a></button> 
                <button style='width:70px' onclick="return confirm('are you sure')"><a href='delete.php?id=<?php echo $row['id'] ?>'>Delete</a></button></td> 
+               <td><button style='width:90px'><a href='addRecord.php'>AddRecord</a></button></td>
                  
                  <?php echo "</tr>";
             }

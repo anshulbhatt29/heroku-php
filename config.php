@@ -1,9 +1,15 @@
 <?php
+/*
 $databaseHost = 'localhost';
 $databaseName = 'TestDatabase';
 $databaseUserName = 'root';
-$databasePassword = '';
+$databasePassword = '';*/
 
+//Remote database
+$databaseHost = 'remotemysql.com';
+$databaseName = 'RTYPy1EWAb';
+$databaseUserName = 'RTYPy1EWAb';
+$databasePassword = 'y5Q4rTXatn';
 
 $mysqli= new mysqli($databaseHost,$databaseUserName,$databasePassword,$databaseName);
 if($mysqli->connect_error){
